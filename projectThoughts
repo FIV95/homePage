@@ -1,0 +1,36 @@
+I think this project was really too much work for a beginner based off the skills I had acquired in Coding Dojo.
+
+I spent a lot of time looking up different techniques that I hadn't been taught yet and I spent more time learning new things than I did practicing existing techniques that I was taught.
+
+This is no fault of Coding Dojo and is more reflective of a missing ability I have to understand what was feasible with the given equipment.
+
+In coding Dojo I learned:
+most if not all the HTML elements this doucment contains
+how to link my javascript and css to my html
+inline event handling
+CSS flex and basic styling
+How to get an API onto my project
+How to use queries to define elements of my HTML into variables that can be used in my Javascript functions
+
+things I learned how to do on my own:
+Use EventListeners to keep script events outside of my Markup
+
+
+Dynamic DOM Element Creation - making HTML elements with my javascript with append and appendChild
+
+
+main functions of my site:
+
+Timer & timer display
+To Do List
+      the Dynamic DOM creation was my favorite part even though its still confusing to me. I have to give a lot of credit to Jon and Colby for pointing me
+      to this technique
+video change on select option change
+
+Things I want to add:
+
+styling based off current selected video
+timer alert Sound
+Task lisk keeps track of crossed off tasks
+open all links in new tabs
+

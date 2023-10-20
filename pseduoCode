@@ -1,0 +1,43 @@
+so im adding three variables to my javascript files.
+
+1) Im holding a variable createBtnElement that represents the Create Button
+This will recieve an event listener that listens for a click -
+the function that runs if a click occurs will be called createTask
+      create conditional that checks current count of "task" divs on my html
+            we have to create a new variable using document.getElementByClass('task')
+            this command will essentially make a list and assign my new variable name taskCountElement
+                  this list length can tell us how many divs of "task" we have
+                        we create variable taskLimit and set it (taskLimit = 5)
+                        conditional now can compare two pieces of data
+                              if (taskCountElement.length) is Greater Than (taskLimit) // if (taskCountElement.length > taskLimit)
+                              If this conditional is true what happens??
+                                    we break??? how do we stop the the createTask function from running?
+                              we also need to create a message/error that tells the user the cap has been met - indicating they need to remove a task or clear the list.
+
+2) the second variable newTaskElement is an element representing the text field newTask
+
+3) the third variable newTaskName holds the information of newTaskElement's VALUE (WHATEVER THE USER TYPES)
+
+the function createTasks needs to try and do the following:
+the parameter it will take in is (task)
+-- so far we have createTask(task){} --
+in our HTML we have 5 task divs
+      inside we have
+            1 checkbox
+            1 label
+            1 span that holds our custom checkbox
+            1 p tag that holds the task name
+
+I think we have two solutions to this problem
+1) everytime we use createTask- the function we made
+      we create a new "task" div
+            that div will be located in the class "tasks"
+            that div will contain the same elements as our blank task
+                  but that div will contain a unique <p> tag
+                  that <p> tag will contain the newTaskName
+With this method -
+      What happens when we keep adding tasks?
+            should there a cap for visual clarity and user ease?
+                  I think the cap should stay to 4/5
+                  THIS MEANS WE NEED to write conditional - go back to line 4
+

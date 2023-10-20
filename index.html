@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Page</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div id="randomQuote">
+				<p>
+					"All we have to decide is what to do with the time that is given us.”
+					- Gandalf
+				</p>
+			</div>
+			<div class="navigation">
+				<div class="bookmarks">
+					<div class="shortcuts">
+						<a href="https://developer.mozilla.org/en-US"
+						target="_blank"
+						>
+							<img
+								id="devMozImg"
+								class="websiteIcons"
+								src="images/Firefox_Developer_Edition_logo,_2017.png"
+								alt="mozilla Developer website"
+							/>
+						</a>
+						<a href="https://developer.mozilla.org/en-US/"
+						target="_blank"
+						>
+							<button id="devMozBut">Developer Mozilla</button>
+						</a>
+					</div>
+					<div class="shortcuts">
+						<a href="https://login.codingdojo.com/dashboard"
+						target="_blank"
+						>
+							<img
+								id="codingDojoImg"
+								class="websiteIcons"
+								src="images/codingDojo.jpg"
+								alt="coding dojo website"
+							/>
+						</a>
+						<a href="https://login.codingdojo.com/dashboar"
+						target="_blank"
+						>
+							<button id="codingDojoBut">Coding Dojo</button>
+						</a>
+					</div>
+					<div class="shortcuts">
+						<a href="https://excalidraw.com/"
+						target="_blank"
+						>
+							<img
+								id="excalidrawImg"
+								class="websiteIcons"
+								src="images/excalidraw.png"
+								alt="excalidraw website"
+							/>
+						</a>
+						<a href="https://excalidraw.com/"
+						target="_blank"
+						>
+							<button id="excalidrawBut">Excalidraw</button>
+						</a>
+					</div>
+					<div class="shortcuts">
+						<a
+							href="https://docs.google.com/spreadsheets/d/1hwbPs2B-r4k3E4pLBNwPGnE_R_USyQ9YpKyzNr6ZmE4/edit#gid=1466731108"
+							target="_blank"
+						>
+							<img
+								id="GoogleSheetsImg"
+								class="websiteIcons"
+								src="images/Google_Sheets_logo_(2014-2020).svg.png"
+								alt="Google Sheets Logo"
+							/>
+						</a>
+						<a
+							href="https://docs.google.com/spreadsheets/d/1hwbPs2B-r4k3E4pLBNwPGnE_R_USyQ9YpKyzNr6ZmE4/edit#gid=1466731108"
+							target="_blank"
+						>
+							<button id="GoogleSheetsBut">Class Schedule</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="theme-switch-menu">
+				<button type="button"
+				id="themeSwitch"
+				aria-haspopup="menu"></button>
+			</div> -->
+			<div class="datetab">
+				<p id="date-and-day"></p>
+			</div>
+		</div>
+		<div class="masterContainer">
+			<div class="column1">
+				<div class="timeBox">
+						<div class="timeHeader">
+							<h1>Work Timer:</h1>
+						</div>
+					<div class="timeOptions">
+						<button id="1hourTimer" type="button">1 Hour Timer</button>
+						<button id="2hourTimer" type="button">2 Hour Timer</button>
+					</div>
+					<div class="timerReset">
+						<button id="timeReset" type="button">Reset</button>
+					</div>
+					<div class="remaining">
+						<p id="timeRemaining">Time Remaining:</p>
+					</div>
+				</div>
+				<div class="youTubeMediaBox">
+					<div class="YouTubeHeadBox">
+						<h1>Media</h1>
+						<div class="musicSelection">
+							<label for="mediaSelect">Select Music:</label>
+							<select
+								onChange="videoChange(this)"
+								id="musicChoice"
+								name="mediaSelect">
+
+								<option value="0">Avoiding the Puddle</option>
+								<option value="1">A State of Trance</option>
+								<option value="2">Zeldawave</option>
+								<option value="3">FinalFantasy Chill</option>
+								<option value="4">Cosmic Gate</option>
+								<option value="5">Liquicity YearMix 2014</option>
+							</select>
+						</div>
+					</div>
+				<div class="playlistBox">
+					<iframe
+						class="playlist"
+						src="https://www.youtube.com/embed/videoseries?si=oz6AS77RoAiTjIPL&amp;list=PLMCyLSAjLlQ1F0h0dMAve4gbhnhBVzd9y"
+					></iframe>
+				</div>
+				</div>
+			</div>
+		<div class="column2">
+			<div class="toDo">
+				<div class="toDoHeader">
+					<h1 id="toDoTitle">To Do:</h1>
+					<div class="taskBox">
+						<p id="totalTaskCount">Total Tasks:</p>
+						<p id="totalTaskCountNumerical">4</p>
+					</div>
+				</div>
+				<div class="toDoMain">
+					<div class="tasks">
+						<div class="task">
+							<input type="checkbox" id="task1" />
+							<label for="task1">
+								<span class="custom-checkbox"></span>
+								<p>1 Hour - Vim Motions Practice</p>
+							</label>
+						</div>
+						<!--/CLOSE TASK 1-->
+						<div class="task">
+							<input type="checkbox" id="task2" />
+							<label for="task2">
+								<span class="custom-checkbox"></span>
+								<p>1 Hour - Vim Motions Practice</p>
+							</label>
+						</div>
+						<!--/CLOSE TASK 2-->
+						<div class="task">
+							<input type="checkbox" id="task3" />
+							<label for="task3">
+								<span class="custom-checkbox"></span>
+								1 Hour - Vim Motions Practice
+							</label>
+						</div>
+						<!--/CLOSE TASK 3-->
+						<div class="task">
+							<input type="checkbox" id="task4" />
+							<label for="task4">
+								<span class="custom-checkbox"></span>
+								1 Hour - Vim Motions Practice
+							</label>
+						</div>
+					</div>
+					<!--/CLOSE TASK 4-->
+					<div class="taskCreation">
+						<button class="createBtn" aria-label="create task button">+</button>
+						<form>
+							<input
+								type="text"
+								class="newTask"
+								placeholder="New Task"
+								aria-label="newTaskName"
+							/>
+						</form>
+					</div>
+				</div>
+				<div class="taskDeletion">
+					<button id="removeTaskBtn" aria-label="remove task button">
+						Remove Selected
+					</button>
+					<button id="clearAllTasks" aria-label="clear all tasks">
+						Remove all
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="movieQuotes.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
